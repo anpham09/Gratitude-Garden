@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f8ef;
+    color: #2f3e2f;
+}
+
+.app{
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card{
+    background: white;
+    padding: 24px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08 );
+
+}
+
+textarea{
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #c9dfc3;
+    border-radius: 12px;
+    resize: none;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #6bad68;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #579854;
+}
+
+.garden {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+
+
+
+
+
+
+
+

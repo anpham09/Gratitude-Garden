@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily Gratitude Garden</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="app">
+        <header>
+            <h1>Daily Gratitude Garden</h1>
+            <p>Write one thing someone did for you and grow your garden!</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Today's Gratitude</h2>
+                <textarea id="gratitudeInput" placeholder="Today I am grateful to... for..."></textarea>
+                <button id="plantButton">Plant Seed</button>
+            </section>
+
+            <section class="card">
+                <h2>Your Garden</h2>
+                <div id="garden" class="garden"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="./js/script.js"></script>
+
+
     
 </body>
 </html>
