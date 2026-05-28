@@ -5,6 +5,15 @@ body {
     color: #2f3e2f;
 }
 
+h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #477a45;
+}
+
 .app{
     max-width: 900px;
     margin: auto;
@@ -55,6 +64,11 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+
+    background: linear-gradient(#dff3ff, #e8f7df);
+    border-radius: 18px;
+    padding: 20px;
+    border: 3px solid #b7d9a8;
 }
 
 .plant {
@@ -64,6 +78,11 @@ button:hover {
     padding: 14px;
     text-align: center;
     border: 2px solid #d4e8cd;
+    transition: transform 0.2s ease;
+}
+
+.plant:hover {
+    transform: translateY(-5px);
 }
 
 .plant-emoji {
@@ -78,11 +97,48 @@ button:hover {
     color: #6b7b6b;
 }
 
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.stats p {
+    background: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+}
+
+.delete-btn {
+    background: #d96b6b;
+    font-size: 12px;
+    padding: 8px 10px;
+}
+
+.delete-btn:hover {
+    background: #c75656;
+}
 
 
+@media (max-width: 600px) {
+    .app {
+        padding: 16px;
+    }
 
+    h1 {
+        font-size: 32px;
+    }
 
+    .plant {
+        width: 100%;
+    }
 
+    .stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
 
 
 
