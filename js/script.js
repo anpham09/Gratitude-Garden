@@ -3,6 +3,7 @@ const plantButton = document.getElementById("plantButton");
 const garden = document.getElementById("garden");
 const streakCount = document.getElementById("streakCount");
 const totalPlants = document.getElementById("totalPlants");
+const moodSelect = document.getElementById("moodSelect");
 
 let entries = JSON.parse(localStorage.getItem("gratitudeEntries")) || [];
 
@@ -31,7 +32,8 @@ plantButton.addEventListener("click", function () {
     const entry = {
         text: text,
         date: today,
-        stage: entries.length
+        stage: entries.length,
+        mood: moodSelect.value
     };
 
     entries.push(entry);
@@ -57,6 +59,7 @@ function displayGarden() {
 
         plant.innerHTML = `
             <div class="plant-emoji">${emoji}</div> 
+            <div class="mood">${entry.mood || "😆"}</div>
             <p>${entry.text}</p>
             <small>${entry.date}</small>
             <button class ="delete-btn" onclick="deleteEntry(${index})">Delete</button>
